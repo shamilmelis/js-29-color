@@ -12,12 +12,10 @@ arrayImg.forEach(el => {
         chbox.checked = true
         el.append(chbox)
         el.addEventListener('dblclick', () => {
-            if (el.getElementsByClassName('checkbox')[0]) {
                 if (el.getElementsByClassName('checkbox')[0]) {
                     el.style.background = '#fff'
                     el.getElementsByClassName('checkbox')[0].remove()
                 }
-            }
         })
     })
 })
